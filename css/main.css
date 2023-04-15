@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -11,6 +12,13 @@ body {
   background: hsl(185deg, 41%, 84%);
 }
 
+body {
+  font-family: "Space Mono", monospace;
+}
+body input {
+  font-family: "Space Mono", monospace;
+}
+
 #tip__calc__container {
   display: flex;
   align-items: center;
@@ -22,6 +30,15 @@ body {
   width: 375px;
   border-radius: 16px 16px 0 0;
   background: hsl(0deg, 0%, 100%);
+}
+
+#calculator--input--bill--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#calculator--input--bill--container input {
+  border: none;
 }
 
 /*# sourceMappingURL=main.css.map */

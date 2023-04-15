@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+$space: 'Space Mono', monospace;
+
+body
+{
+    font-family: $space;
+    input{font-family: $space}
+}
