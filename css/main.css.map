@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_reset.scss","../sass/layout/_calculatorContainer.scss","../sass/layout/_calculator.scss","../sass/abstracts/_colors.scss"],"names":[],"mappings":"AACA;EAEI;EACA;EACA;;;AAGJ;EAEI;EACA;EACA;EACA;;;ACbJ;EAEI;EACA;EACA;EACA;;;ACJJ;EACI;EACA;EACA,YCCI","file":"main.css"}

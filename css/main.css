@@ -1,3 +1,27 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: hsl(185deg, 41%, 84%);
+}
+
+#tip__calc__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#calculator {
+  width: 375px;
+  border-radius: 16px 16px 0 0;
+  background: hsl(0deg, 0%, 100%);
+}
 
 /*# sourceMappingURL=main.css.map */
