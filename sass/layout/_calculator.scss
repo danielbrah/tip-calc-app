@@ -3,4 +3,10 @@
     width: 375px;
     border-radius: 16px 16px 0 0;
     background: $white;
+    padding: 32px 0;
+
+    &--input
+    {
+        padding: 0 32px;
+    }
 }

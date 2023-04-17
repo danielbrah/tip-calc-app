@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import '../abstracts/colors';
 $space: 'Space Mono', monospace;
 
 body
 {
     font-family: $space;
     input{font-family: $space}
+}
+
+.input-label
+{
+    font-size: 18px;
+    color: map-get($cyan, 'darkgray')
+}
+
+.input-data
+{
+    input
+    {
+        font-size: 24px;
+        color: map-get($cyan, 'verydarkgray')
+    }
 }

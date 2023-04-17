@@ -1,0 +1,20 @@
+@import '../abstracts/colors';
+.input-data
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: map-get($cyan, 'verylightgray');
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    input
+    {
+        border: none;
+        text-align: right;
+        background: none;
+        position: relative;
+        // left: -10px;
+        width: 250px;
+    }
+}

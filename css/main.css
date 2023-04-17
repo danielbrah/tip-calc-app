@@ -19,6 +19,16 @@ body input {
   font-family: "Space Mono", monospace;
 }
 
+.input-label {
+  font-size: 18px;
+  color: hsl(186deg, 14%, 43%);
+}
+
+.input-data input {
+  font-size: 24px;
+  color: hsl(183deg, 100%, 15%);
+}
+
 #tip__calc__container {
   display: flex;
   align-items: center;
@@ -30,15 +40,26 @@ body input {
   width: 375px;
   border-radius: 16px 16px 0 0;
   background: hsl(0deg, 0%, 100%);
+  padding: 32px 0;
+}
+#calculator--input {
+  padding: 0 32px;
 }
 
-#calculator--input--bill--container {
+.input-data {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: hsl(189deg, 41%, 97%);
+  padding: 8px 16px;
+  border-radius: 4px;
 }
-#calculator--input--bill--container input {
+.input-data input {
   border: none;
+  text-align: right;
+  background: none;
+  position: relative;
+  width: 250px;
 }
 
 /*# sourceMappingURL=main.css.map */
