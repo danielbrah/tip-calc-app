@@ -50,11 +50,12 @@ body input {
   display: grid;
   place-items: center;
   position: relative;
-  transition: top 150ms ease;
+  transition: top 250ms ease;
   cursor: pointer;
 }
 #percentage-btns .percentage-btn:active {
   top: 2px;
+  transition: top 250ms ease;
 }
 #percentage-btns #custom-input {
   display: grid;

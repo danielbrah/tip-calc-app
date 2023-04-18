@@ -13,10 +13,14 @@
         display: grid;
         place-items: center;
         position: relative;
-        transition: top 150ms ease;
+        transition: top 250ms ease;
         cursor: pointer;
 
-        &:active{top: 2px;}
+        &:active
+        {
+            top: 2px;
+            transition: top 250ms ease;
+        }
     }
 
     #custom-input
