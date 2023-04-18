@@ -1,0 +1,27 @@
+@import '../abstracts/colors';
+#percentage-btns
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    .percentage-btn
+    {
+        background: map-get($cyan, verydarkgray);
+        border-radius: 8px;
+        padding: 8px 0;
+        display: grid;
+        place-items: center;
+    }
+
+    #custom-input
+    {
+        display: grid; 
+        place-items: center;
+        background: map-get($cyan, 'verylightgray');
+        border: none;
+        width: 147.5px;
+        text-align: right;
+        padding-right: 8px;
+    }
+}

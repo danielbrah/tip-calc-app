@@ -29,6 +29,37 @@ body input {
   color: hsl(183deg, 100%, 15%);
 }
 
+#percentage-btns .percentage-btn {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 24px;
+}
+#percentage-btns #custom-input {
+  font-size: 24px;
+  color: hsl(183deg, 100%, 15%);
+}
+
+#percentage-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+#percentage-btns .percentage-btn {
+  background: hsl(183deg, 100%, 15%);
+  border-radius: 8px;
+  padding: 8px 0;
+  display: grid;
+  place-items: center;
+}
+#percentage-btns #custom-input {
+  display: grid;
+  place-items: center;
+  background: hsl(189deg, 41%, 97%);
+  border: none;
+  width: 147.5px;
+  text-align: right;
+  padding-right: 8px;
+}
+
 #tip__calc__container {
   display: flex;
   align-items: center;

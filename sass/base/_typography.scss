@@ -22,3 +22,18 @@ body
         color: map-get($cyan, 'verydarkgray')
     }
 }
+
+#percentage-btns
+{
+    .percentage-btn
+    {
+        color: $white;
+        font-size: 24px;
+    }
+
+    #custom-input
+    {
+        font-size: 24px;
+        color: map-get($cyan, 'verydarkgray')
+    }
+}
