@@ -12,6 +12,11 @@
         padding: 8px 0;
         display: grid;
         place-items: center;
+        position: relative;
+        transition: top 150ms ease;
+        cursor: pointer;
+
+        &:active{top: 2px;}
     }
 
     #custom-input
@@ -24,5 +29,7 @@
         text-align: right;
         padding-right: 8px;
         border-radius: 8px;
+
+        &:focus{outline: none;}
     }
 }

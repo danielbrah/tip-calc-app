@@ -15,5 +15,7 @@
         background: none;
         position: relative;
         width: 250px;
+
+        &:focus{outline: none;}
     }
 }
