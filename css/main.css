@@ -57,6 +57,10 @@ body input {
   top: 2px;
   transition: top 250ms ease;
 }
+#percentage-btns .percentage-btn.active {
+  color: hsl(183deg, 100%, 15%);
+  background: hsl(172deg, 67%, 45%);
+}
 #percentage-btns #custom-input {
   display: grid;
   place-items: center;

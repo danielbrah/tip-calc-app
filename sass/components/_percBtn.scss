@@ -21,6 +21,12 @@
             top: 2px;
             transition: top 250ms ease;
         }
+
+        &.active
+        {
+            color: map-get($cyan, 'verydarkgray');
+            background: map-get($cyan, 'strong')
+        }
     }
 
     #custom-input
