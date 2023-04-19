@@ -1,4 +1,6 @@
 const percBtns = [...document.querySelectorAll('.percentage-btn')]
+percBtns.push(document.getElementById('custom-input'))
+console.log(percBtns);
 
 percBtns.forEach(element => {
     element.addEventListener('click', () =>{
