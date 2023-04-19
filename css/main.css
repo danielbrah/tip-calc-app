@@ -70,9 +70,10 @@ body input {
   text-align: right;
   padding-right: 8px;
   border-radius: 8px;
+  cursor: pointer;
 }
 #percentage-btns #custom-input:focus {
-  outline: none;
+  outline: 4px solid hsl(172deg, 67%, 45%);
 }
 
 #tip__calc__container {

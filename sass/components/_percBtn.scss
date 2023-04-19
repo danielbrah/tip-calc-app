@@ -39,7 +39,11 @@
         text-align: right;
         padding-right: 8px;
         border-radius: 8px;
+        cursor: pointer;
 
-        &:focus{outline: none;}
+        &:focus
+        {
+            outline: 4px solid map-get($cyan, 'strong');
+        }
     }
 }
