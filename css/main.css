@@ -118,4 +118,11 @@ body input {
   outline: none;
 }
 
+#calculator--results {
+  background: hsl(183deg, 100%, 15%);
+  margin: 32px 24px 0 24px;
+  border-radius: 12px;
+  padding: 32px 16px 16px 16px;
+}
+
 /*# sourceMappingURL=main.css.map */
