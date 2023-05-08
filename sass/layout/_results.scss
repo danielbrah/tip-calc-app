@@ -1,8 +1,18 @@
 @import '../abstracts/colors';
 #calculator--results
 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
     background: map-get($cyan, 'verydarkgray');
     margin: 32px 24px 0 24px;
     border-radius: 12px;
-    padding: 32px 16px 16px 16px;
+    padding: 32px 24px 24px 24px;
+
+    > div 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

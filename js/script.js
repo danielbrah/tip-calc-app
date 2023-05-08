@@ -1,4 +1,6 @@
 const percBtns = [...document.querySelectorAll('.percentage-btn'), document.getElementById('custom-input')]
+const tip = document.getElementById('tip')
+const total = document.getElementById('total')
 
 percBtns.forEach(element => {
     element.addEventListener('click', () =>{

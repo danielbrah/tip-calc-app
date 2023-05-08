@@ -1,0 +1,19 @@
+@import '../abstracts/colors';
+@import '../abstracts/mixins';
+#reset
+{
+    opacity: 0.5;
+    background: map-get($cyan, 'strong');
+    padding: 8px 0;
+    border-radius: 4px;
+
+    p{margin: 0 auto;}
+
+    &.active
+    {
+        opacity: 1;
+
+        &:hover{}
+    }
+
+}

@@ -37,3 +37,32 @@ body
         color: map-get($cyan, 'verydarkgray')
     }
 }
+
+#calculator--results
+{
+    div
+    {
+        p:nth-child(1)
+        {
+            color: white;
+            span
+            {
+                color: map-get($cyan, 'gray');
+                font-size: 14px;
+            }
+        }
+
+        p:nth-child(2)
+        {
+            color: map-get($cyan, 'strong');
+            font-size: 32px;
+        }
+    }
+}
+
+#reset
+{
+    text-transform: uppercase;
+    font-size: 18px;
+    p{color: map-get($cyan, 'verydarkgray') !important;}
+}

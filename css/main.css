@@ -38,6 +38,26 @@ body input {
   color: hsl(183deg, 100%, 15%);
 }
 
+#calculator--results div p:nth-child(1) {
+  color: white;
+}
+#calculator--results div p:nth-child(1) span {
+  color: hsl(184deg, 14%, 56%);
+  font-size: 14px;
+}
+#calculator--results div p:nth-child(2) {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 32px;
+}
+
+#reset {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+#reset p {
+  color: hsl(183deg, 100%, 15%) !important;
+}
+
 #percentage-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -76,6 +96,18 @@ body input {
   outline: 4px solid hsl(172deg, 67%, 45%);
 }
 
+#reset {
+  opacity: 0.5;
+  background: hsl(172deg, 67%, 45%);
+  padding: 8px 0;
+  border-radius: 4px;
+}
+#reset p {
+  margin: 0 auto;
+}
+#reset.active {
+  opacity: 1;
+}
 #tip__calc__container {
   display: flex;
   align-items: center;
@@ -101,6 +133,7 @@ body input {
 
 .input-data {
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   background: hsl(189deg, 41%, 97%);
@@ -119,10 +152,18 @@ body input {
 }
 
 #calculator--results {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
   background: hsl(183deg, 100%, 15%);
   margin: 32px 24px 0 24px;
   border-radius: 12px;
-  padding: 32px 16px 16px 16px;
+  padding: 32px 24px 24px 24px;
+}
+#calculator--results > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
