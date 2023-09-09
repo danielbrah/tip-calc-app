@@ -6,6 +6,8 @@
     background: map-get($cyan, 'strong');
     padding: 8px 0;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background 150ms ease;
 
     p{margin: 0 auto;}
 
@@ -13,9 +15,7 @@
     {
         opacity: 1;
 
-        &:hover{
-            
-        }
+        &:hover{background: map-get($cyan, 'lightgray');}
     }
 
 }

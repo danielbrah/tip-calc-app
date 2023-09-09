@@ -4,11 +4,20 @@ const total = document.getElementById('total')
 const person = document.getElementById('input-person')
 const bill = document.getElementById('input-bill')
 const percInput = document.getElementById('custom-input')
+const resetBtn = document.getElementById('reset')
 
 const setElContent = function(tip = '0.00', total = '0.00')
 {
     this.tip.textContent = `${tip}`
     this.total.textContent = `${total}`
+}
+
+const reset = function(){
+    tip.textContent = '0.00'
+    total.textContent = '0.00'
+    person.value = ''
+    bill.value = ''
+    percInput.value = ''
 }
 
 const calcTotal = function(activeBtn){
@@ -53,3 +62,5 @@ document.addEventListener('input', () => {
         ) calcTotal(percBtns.filter(btn => btn.classList.contains('active')))
     })
 })
+
+resetBtn.addEventListener('click', reset)
