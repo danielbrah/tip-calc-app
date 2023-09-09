@@ -46,7 +46,7 @@ percBtns.forEach(element => {
     })
 })
 
-document.addEventListener('keydown', () => {
+document.addEventListener('input', () => {
 
     setTimeout(() => {
         if(Boolean(percBtns.find(btn => btn.classList.contains('active')))
