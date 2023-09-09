@@ -5,19 +5,32 @@ const person = document.getElementById('input-person')
 const bill = document.getElementById('input-bill')
 const percInput = document.getElementById('custom-input')
 
-const calcTotal = function(){
-    const percBtnCheck = percBtns.every(element => element.classList.contains('active'));
+const setElContent = function(tip = '0.00', total = '0.00')
+{
+    this.tip.textContent = `${tip}`
+    this.total.textContent = `${total}`
+}
 
-    if(!Boolean(validateInput(bill) || !Boolean(percBtnCheck) || !Boolean(validateInput(person)))) return
-    else
-    {
+const calcTotal = function(activeBtn){
+    const percBtnCheck = Boolean(percBtns.find(element => element.classList.contains('active')));
+    const tip = activeBtn[0].tagName !== 'DIV' ? validateInput(activeBtn[0]) : Number(activeBtn[0].dataset.perc)
+    const totalPerson = validateInput(person)
+    const totalTipPerPerson = ((validateInput(bill) * tip / 100) / totalPerson).toFixed(2)
+    const totalBillPerPerson = ((validateInput(bill) / totalPerson) + Number(totalTipPerPerson)).toFixed(2)
 
+
+    if(Boolean(validateInput(bill)) === false || Boolean(percBtnCheck) === false || Boolean(totalPerson) === false){
+        setElContent()
+        return
     }
-
+    else
+    { 
+        setElContent(totalTipPerPerson, totalBillPerPerson)
+    }
 }
 
 const validateInput = function(input){
-    return Number(input.value.replace(' ', '').trim())
+    return Number(input.value.replace(' ', '').trim()) 
 }
 
 percBtns.forEach(element => {
@@ -29,10 +42,14 @@ percBtns.forEach(element => {
            element.classList.add('active')
         }
 
-        calcTotal()
+        calcTotal([...percBtns.filter(btn => btn.classList.contains('active'))])
     })
 })
 
 document.addEventListener('keydown', () => {
-    if(percInput.classList.contains('active')) setTimeout(() => console.log(Boolean(validateInput(percInput))))
+
+    setTimeout(() => {
+        if(Boolean(percBtns.find(btn => btn.classList.contains('active')))
+        ) calcTotal(percBtns.filter(btn => btn.classList.contains('active')))
+    })
 })
