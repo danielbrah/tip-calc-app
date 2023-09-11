@@ -5,7 +5,9 @@ const person = document.getElementById('input-person')
 const bill = document.getElementById('input-bill')
 const percInput = document.getElementById('custom-input')
 const resetBtn = document.getElementById('reset')
-// const allInputFields = [...document.querySelectorAll('input')].filter(input => input.classList.contains('active'))
+// const errorMsg 
+const regex = /^0+(?:\.0+)?$/
+
 
 const errorCheck = function() 
 {
@@ -21,6 +23,14 @@ const errorCheck = function()
     else{
         calcTotal(activeBtn, totalPerson)
     }
+}
+
+const displayError = function(el){
+    el.style.outline = '2px solid rgb(255, 75, 75)'
+}
+
+const clearError = function(el) {
+    el.style.outline = 'none'
 }
 
 const setElContent = function(tip = '0.00', total = '0.00')
@@ -62,7 +72,12 @@ percBtns.forEach(element => {
     })
 })
 
-document.addEventListener('input', () => setTimeout(errorCheck))
+document.addEventListener('input', (e) => {
+    if(regex.test(e.target.value)) displayError(e.target.closest('.input-field'))
+    else clearError(e.target.closest('.input-field'))
+
+    setTimeout(errorCheck)
+})
 
 resetBtn.addEventListener('click', reset)
 
