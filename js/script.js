@@ -5,7 +5,6 @@ const person = document.getElementById('input-person')
 const bill = document.getElementById('input-bill')
 const percInput = document.getElementById('custom-input')
 const resetBtn = document.getElementById('reset')
-// const errorMsg 
 const regex = /^0+(?:\.0+)?$/
 
 
@@ -82,7 +81,3 @@ document.addEventListener('input', (e) => {
 })
 
 resetBtn.addEventListener('click', reset)
-
-// NEXT UP: ADD HOVER EVENTS FOR INPUT FIELDS AND USE ERROR CHECKING FOR THESE FIELDS 
-// (WHENEVER THE FIELD IS EMPTY, AN ERROR SHOULD POPUP!)
-// REWRITE TIME!?
