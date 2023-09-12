@@ -58,6 +58,11 @@ body input {
   color: hsl(183deg, 100%, 15%) !important;
 }
 
+@media only screen and (min-width: 1366px) {
+  #calculator--results div p:nth-child(2) {
+    font-size: 48px;
+  }
+}
 #percentage-btns {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -93,6 +98,15 @@ body input {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1366px) {
+  #percentage-btns {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  #percentage-btns #custom-input {
+    width: 118px;
+  }
+}
 #reset {
   opacity: 0.5;
   background: hsl(172deg, 67%, 45%);
@@ -160,7 +174,7 @@ body input {
   padding: 32px 0;
 }
 #calculator--input {
-  padding: 0 32px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -169,6 +183,19 @@ body input {
   margin-bottom: 8px;
 }
 
+@media only screen and (min-width: 1366px) {
+  #calculator {
+    display: flex;
+    align-items: center;
+    width: 920px;
+    padding: 0;
+    height: 481px;
+    border-radius: 16px;
+  }
+  #calculator > * {
+    flex: 1;
+  }
+}
 .input-data {
   display: flex;
   justify-content: center;
@@ -202,6 +229,22 @@ body input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (min-width: 1366px) {
+  #calculator--results {
+    margin: 0 24px;
+    position: relative;
+    height: 417px;
+  }
+  #calculator--results > div {
+    margin: 0 24px;
+  }
+  #calculator--results #reset {
+    position: absolute;
+    bottom: 30px;
+    width: 333px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

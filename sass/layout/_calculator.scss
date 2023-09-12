@@ -8,7 +8,7 @@
 
     &--input
     {
-        padding: 0 32px;
+        padding: 24px;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -17,5 +17,20 @@
         {
             margin-bottom: 8px;
         }
+    }
+}
+
+@media only screen and (min-width: 1366px)
+{
+    #calculator
+    {
+        display: flex;
+        align-items: center;
+        width: 920px;
+        padding: 0;
+        height: 481px;
+        border-radius: 16px;
+
+        > * {flex: 1;}
     }
 }

@@ -16,3 +16,24 @@
         align-items: center;
     }
 }
+
+@media only screen and (min-width: 1366px)
+{
+    #calculator--results
+    {
+        margin: 0 24px;
+        position: relative;
+
+        > div{margin: 0 24px;}
+
+        height: 417px;
+        // padding: 48
+
+        #reset{
+            position: absolute;
+            bottom: 30px;
+            width: 333px;
+        }
+        
+    }
+}
