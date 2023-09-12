@@ -27,10 +27,12 @@ const errorCheck = function()
 
 const displayError = function(el){
     el.style.outline = '2px solid rgb(255, 75, 75)'
+    if(el.children.length !== 0) el.lastElementChild.classList.add('show')
 }
 
 const clearError = function(el) {
     el.style.outline = 'none'
+    if(el.children.length !== 0) el.lastElementChild.classList.remove('show')
 }
 
 const setElContent = function(tip = '0.00', total = '0.00')
